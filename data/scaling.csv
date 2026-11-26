@@ -1,0 +1,11 @@
+family,training_compute_flop,score_pct
+Family X,1e+20,17.8
+Family X,1e+21,26.7
+Family X,1e+22,38.5
+Family X,1e+23,46.3
+Family X,1e+24,55.5
+Family Y,1e+20,11.6
+Family Y,1e+21,23.1
+Family Y,1e+22,33.4
+Family Y,1e+23,44.0
+Family Y,1e+24,54.5

@@ -1,0 +1,54 @@
+{
+  "id": "compute_scaling",
+  "title": "Scores rise steadily with training compute",
+  "x_label": "Training compute (FLOP, log scale)",
+  "y_label": "Benchmark score",
+  "caption": "Figure 2. Average benchmark score against training compute for two model families. Family X reaches 55.5% at the largest budget.",
+  "plotted": [
+    {
+      "family": "Family X",
+      "training_compute_flop": 1e+20,
+      "score_pct": 17.8
+    },
+    {
+      "family": "Family X",
+      "training_compute_flop": 1e+21,
+      "score_pct": 26.7
+    },
+    {
+      "family": "Family X",
+      "training_compute_flop": 1e+22,
+      "score_pct": 38.5
+    },
+    {
+      "family": "Family X",
+      "training_compute_flop": 1e+23,
+      "score_pct": 46.3
+    },
+    {
+      "family": "Family X",
+      "training_compute_flop": 1e+24,
+      "score_pct": 55.5
+    },
+    {
+      "family": "Family Y",
+      "training_compute_flop": 1e+20,
+      "score_pct": 11.6
+    },
+    {
+      "family": "Family Y",
+      "training_compute_flop": 1e+21,
+      "score_pct": 23.1
+    },
+    {
+      "family": "Family Y",
+      "training_compute_flop": 1e+23,
+      "score_pct": 44.0
+    },
+    {
+      "family": "Family Y",
+      "training_compute_flop": 1e+24,
+      "score_pct": 54.5
+    }
+  ]
+}

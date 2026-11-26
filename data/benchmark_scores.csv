@@ -1,0 +1,21 @@
+model,benchmark,score_pct,ci_low_pct,ci_high_pct,n_items
+Model A,Reasoning,52.8,49.9,55.6,1200
+Model A,Coding,43.4,38.8,48.0,450
+Model A,Math,43.9,40.4,47.3,800
+Model A,Reading,61.4,58.9,63.8,1500
+Model B,Reasoning,56.1,53.3,58.9,1200
+Model B,Coding,51.7,47.1,56.4,450
+Model B,Math,51.3,47.9,54.8,800
+Model B,Reading,67.2,64.8,69.6,1500
+Model C,Reasoning,68.0,65.3,70.6,1200
+Model C,Coding,59.9,55.3,64.4,450
+Model C,Math,60.2,56.8,63.6,800
+Model C,Reading,76.9,74.8,79.1,1500
+Model D,Reasoning,74.2,71.7,76.6,1200
+Model D,Coding,70.8,66.6,75.0,450
+Model D,Math,65.2,61.9,68.5,800
+Model D,Reading,78.9,76.8,80.9,1500
+Model E,Reasoning,81.9,79.7,84.1,1200
+Model E,Coding,72.6,68.5,76.7,450
+Model E,Math,73.2,70.1,76.3,800
+Model E,Reading,87.9,86.2,89.5,1500

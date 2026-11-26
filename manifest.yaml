@@ -1,0 +1,61 @@
+# Figures in the report, who owns each one, and where it stands.
+# The review tool reads this, checks each submitted figure against its
+# source data, and updates the tracker + drafts feedback.
+report: Model Evaluation Report (example)
+reviewer: Bee
+follow_up_after_days: 3
+
+figures:
+  - id: benchmark_accuracy
+    owner: Priya N.
+    status: in_review
+    due: 2026-12-02
+    last_contact: 2026-11-20
+    source: data/benchmark_scores.csv
+    submitted: submissions/benchmark_accuracy.json
+    keys: [model, benchmark]
+    values: [score_pct, ci_low_pct, ci_high_pct]
+    decimals: 1
+    caption_allow: [95]          # "95% confidence intervals" is a method, not a data value
+    claims:
+      - {type: max, column: score_pct, group_by: benchmark, entity_col: model, entity: Model E,
+         text: "Model E scores highest on every suite"}
+
+  - id: compute_scaling
+    owner: Sam K.
+    status: in_review
+    due: 2026-11-27
+    last_contact: 2026-11-24
+    source: data/scaling.csv
+    submitted: submissions/compute_scaling.json
+    keys: [family, training_compute_flop]
+    values: [score_pct]
+    decimals: 1
+
+  - id: refusal_heatmap
+    owner: Priya N.
+    status: needs_changes
+    due: 2026-12-04
+    last_contact: 2026-11-18
+    source: data/refusal_rates.csv
+    submitted: submissions/refusal_heatmap.json
+    keys: [category, model]
+    values: [refusal_rate_pct]
+    decimals: 1
+    claims:
+      - {type: all_above, column: refusal_rate_pct, filter: {model: Model E}, threshold: 95,
+         text: "Model E refused over 95% of requests in every category"}
+
+  - id: jailbreak_mitigation
+    owner: Alex R.
+    status: in_review
+    due: 2026-12-06
+    last_contact: 2026-11-23
+    source: data/jailbreak_mitigation.csv
+    submitted: submissions/jailbreak_mitigation.json
+    keys: [model]
+    values: [before_pct, after_pct]
+    decimals: 1
+    claims:
+      - {type: all_less, column: after_pct, than: before_pct,
+         text: "The mitigation cut jailbreak success for every model"}

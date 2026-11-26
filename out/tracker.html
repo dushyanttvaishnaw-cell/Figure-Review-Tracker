@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Figure tracker</title>
+<style>
+:root{--bg:#fff;--fg:#1f2330;--muted:#5b6170;--line:#e3e5ea;--ok:#1b7f6b;--warn:#a86a00;--bad:#c0392b}
+body{font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;color:var(--fg);background:var(--bg);margin:0;padding:32px max(16px,4vw)}
+h1{font-size:1.6rem;margin:0 0 4px} p.sub{color:var(--muted);margin:0 0 24px}
+.cards{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.card{border:1px solid var(--line);padding:12px 16px;min-width:140px} .card b{display:block;font-size:1.8rem}
+.wrap{overflow-x:auto} table{border-collapse:collapse;width:100%;min-width:760px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap} code{color:var(--muted);font-size:.8rem}
+tr.detail td{border-bottom:2px solid var(--line);padding-top:0} ul{margin:0;padding-left:18px}
+li{margin:2px 0} li b{text-transform:uppercase;font-size:.7rem;letter-spacing:.06em;margin-right:6px}
+li.blocker b{color:var(--bad)} li.question b{color:var(--warn)} li.note b{color:var(--muted)} li.ok{color:var(--ok)}
+.pill{font-size:.75rem;padding:2px 8px;border-radius:99px;color:#fff;white-space:nowrap}
+.pill.approved{background:var(--ok)} .pill.waiting_on_answer{background:var(--warn)} .pill.needs_changes{background:var(--bad)}
+.flag{display:block;color:var(--bad);font-size:.75rem}
+</style></head><body>
+<h1>Model Evaluation Report (example): figure tracker</h1><p class="sub">Checked against source data on November 25, 2026.</p>
+<div class="cards"><div class="card"><b>4</b>figures</div><div class="card"><b>1</b>approved</div>
+<div class="card"><b>0</b>waiting on answer</div><div class="card"><b>3</b>need changes</div>
+<div class="card"><b>3</b>need follow-up</div></div>
+<div class="wrap"><table><thead><tr><th>#</th><th>Figure</th><th>Owner</th><th>Status</th><th>Due</th><th>Last contact</th><th>Issues</th></tr></thead>
+<tbody><tr><td class="num">1</td><td><b>Model E leads on all four benchmarks</b><br><code>benchmark_accuracy</code></td>
+<td>Priya N.</td><td><span class="pill needs_changes">needs changes</span></td><td class="num">2026-12-02</td>
+<td class="num">5d <span class="flag">No reply in 5 days</span></td><td class="num">1</td></tr>
+<tr class="detail"><td></td><td colspan="6"><ul><li class="blocker"><b>blocker</b> Model C, Coding: the chart shows score_pct = 59.1, but the source file has 59.9.</li></ul></td></tr><tr><td class="num">2</td><td><b>Scores rise steadily with training compute</b><br><code>compute_scaling</code></td>
+<td>Sam K.</td><td><span class="pill needs_changes">needs changes</span></td><td class="num">2026-11-27</td>
+<td class="num">1d <span class="flag">Due Nov 27</span></td><td class="num">2</td></tr>
+<tr class="detail"><td></td><td colspan="6"><ul><li class="blocker"><b>blocker</b> The source file has Family Y, 1e+22, but it is not in the chart.</li><li class="question"><b>question</b> The y label &quot;Benchmark score&quot; has no unit.</li></ul></td></tr><tr><td class="num">3</td><td><b>Refusal rates on harmful requests, by category</b><br><code>refusal_heatmap</code></td>
+<td>Priya N.</td><td><span class="pill needs_changes">needs changes</span></td><td class="num">2026-12-04</td>
+<td class="num">7d <span class="flag">No reply in 7 days</span></td><td class="num">2</td></tr>
+<tr class="detail"><td></td><td colspan="6"><ul><li class="blocker"><b>blocker</b> The claim &quot;Model E refused over 95% of requests in every category&quot; does not hold in the data (4 of 5 values are at or below 95, lowest is 77.6).</li><li class="question"><b>question</b> The caption quotes 95%, which does not match any value in the source data.</li></ul></td></tr><tr><td class="num">4</td><td><b>The mitigation cut jailbreak success for every model</b><br><code>jailbreak_mitigation</code></td>
+<td>Alex R.</td><td><span class="pill approved">approved</span></td><td class="num">2026-12-06</td>
+<td class="num">2d </td><td class="num">0</td></tr>
+<tr class="detail"><td></td><td colspan="6"><ul><li class="ok">All checks passed.</li></ul></td></tr></tbody></table></div></body></html>

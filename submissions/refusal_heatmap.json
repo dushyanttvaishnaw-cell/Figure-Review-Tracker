@@ -1,0 +1,134 @@
+{
+  "id": "refusal_heatmap",
+  "title": "Refusal rates on harmful requests, by category",
+  "x_label": "Model (name)",
+  "y_label": "Refusal rate (%)",
+  "caption": "Figure 3. Share of harmful test requests each model refused, by category. Model E refused over 95% of requests in every category.",
+  "plotted": [
+    {
+      "category": "Malware requests",
+      "model": "Model A",
+      "refusal_rate_pct": 77.4
+    },
+    {
+      "category": "Malware requests",
+      "model": "Model B",
+      "refusal_rate_pct": 76.8
+    },
+    {
+      "category": "Malware requests",
+      "model": "Model C",
+      "refusal_rate_pct": 82.5
+    },
+    {
+      "category": "Malware requests",
+      "model": "Model D",
+      "refusal_rate_pct": 87.6
+    },
+    {
+      "category": "Malware requests",
+      "model": "Model E",
+      "refusal_rate_pct": 96.8
+    },
+    {
+      "category": "Fraud schemes",
+      "model": "Model A",
+      "refusal_rate_pct": 70.4
+    },
+    {
+      "category": "Fraud schemes",
+      "model": "Model B",
+      "refusal_rate_pct": 73.7
+    },
+    {
+      "category": "Fraud schemes",
+      "model": "Model C",
+      "refusal_rate_pct": 77.5
+    },
+    {
+      "category": "Fraud schemes",
+      "model": "Model D",
+      "refusal_rate_pct": 83.5
+    },
+    {
+      "category": "Fraud schemes",
+      "model": "Model E",
+      "refusal_rate_pct": 93.0
+    },
+    {
+      "category": "Harassment",
+      "model": "Model A",
+      "refusal_rate_pct": 65.2
+    },
+    {
+      "category": "Harassment",
+      "model": "Model B",
+      "refusal_rate_pct": 71.6
+    },
+    {
+      "category": "Harassment",
+      "model": "Model C",
+      "refusal_rate_pct": 74.0
+    },
+    {
+      "category": "Harassment",
+      "model": "Model D",
+      "refusal_rate_pct": 82.7
+    },
+    {
+      "category": "Harassment",
+      "model": "Model E",
+      "refusal_rate_pct": 87.4
+    },
+    {
+      "category": "Privacy violations",
+      "model": "Model A",
+      "refusal_rate_pct": 59.7
+    },
+    {
+      "category": "Privacy violations",
+      "model": "Model B",
+      "refusal_rate_pct": 68.6
+    },
+    {
+      "category": "Privacy violations",
+      "model": "Model C",
+      "refusal_rate_pct": 72.7
+    },
+    {
+      "category": "Privacy violations",
+      "model": "Model D",
+      "refusal_rate_pct": 80.0
+    },
+    {
+      "category": "Privacy violations",
+      "model": "Model E",
+      "refusal_rate_pct": 83.2
+    },
+    {
+      "category": "Misinformation",
+      "model": "Model A",
+      "refusal_rate_pct": 55.9
+    },
+    {
+      "category": "Misinformation",
+      "model": "Model B",
+      "refusal_rate_pct": 63.9
+    },
+    {
+      "category": "Misinformation",
+      "model": "Model C",
+      "refusal_rate_pct": 63.6
+    },
+    {
+      "category": "Misinformation",
+      "model": "Model D",
+      "refusal_rate_pct": 73.0
+    },
+    {
+      "category": "Misinformation",
+      "model": "Model E",
+      "refusal_rate_pct": 77.6
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "jailbreak_mitigation",
+  "title": "The mitigation cut jailbreak success for every model",
+  "x_label": "Jailbreak success rate (%)",
+  "y_label": "Model (name)",
+  "caption": "Figure 4. Share of jailbreak attempts that succeeded before and after the mitigation. Model A fell from 41.0% to 15.5%.",
+  "plotted": [
+    {
+      "model": "Model A",
+      "before_pct": 41.0,
+      "after_pct": 15.5
+    },
+    {
+      "model": "Model B",
+      "before_pct": 37.2,
+      "after_pct": 18.0
+    },
+    {
+      "model": "Model C",
+      "before_pct": 30.5,
+      "after_pct": 14.1
+    },
+    {
+      "model": "Model D",
+      "before_pct": 21.5,
+      "after_pct": 10.3
+    },
+    {
+      "model": "Model E",
+      "before_pct": 17.9,
+      "after_pct": 8.3
+    }
+  ]
+}

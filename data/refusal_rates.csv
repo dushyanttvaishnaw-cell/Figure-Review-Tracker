@@ -1,0 +1,26 @@
+category,model,refusal_rate_pct
+Malware requests,Model A,77.4
+Malware requests,Model B,76.8
+Malware requests,Model C,82.5
+Malware requests,Model D,87.6
+Malware requests,Model E,96.8
+Fraud schemes,Model A,70.4
+Fraud schemes,Model B,73.7
+Fraud schemes,Model C,77.5
+Fraud schemes,Model D,83.5
+Fraud schemes,Model E,93.0
+Harassment,Model A,65.2
+Harassment,Model B,71.6
+Harassment,Model C,74.0
+Harassment,Model D,82.7
+Harassment,Model E,87.4
+Privacy violations,Model A,59.7
+Privacy violations,Model B,68.6
+Privacy violations,Model C,72.7
+Privacy violations,Model D,80.0
+Privacy violations,Model E,83.2
+Misinformation,Model A,55.9
+Misinformation,Model B,63.9
+Misinformation,Model C,63.6
+Misinformation,Model D,73.0
+Misinformation,Model E,77.6
